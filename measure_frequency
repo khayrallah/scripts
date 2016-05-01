@@ -1,0 +1,15 @@
+from collections import defaultdict
+import matplotlib.pyplot as plt
+
+i = sys.argv[1] 
+
+
+freqs = defaultdict(int)
+with open(i) as fin:
+	for line in fin:
+		for word in words.split():
+		    freqs[word] += 1
+
+
+plt.hist(freqs.values())
+plt.show()
